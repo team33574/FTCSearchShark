@@ -119,7 +119,7 @@ mark {
   transition: 0.2s;
 }
 mark {
-  background-color: rgb(144, 224, 240);
+  background-color: rgb(141, 255, 230);
   padding: 2px;
   border-radius: 3px;
 }
@@ -315,17 +315,26 @@ mark {
 
   color: #000000;
 }
+.wave-box {
+  padding: 0;
+  overflow: hidden;
+}
 
-.divider {
-  width: 60%;
-  margin: 25px auto;
+/* override full width wave behavior */
+.wave-divider {
+  width: 100%;
+  height: 60px;
+  line-height: 0;
+}
 
-  border: none;
-  height: 2px;
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-  background-color: #7dc8e3;
-
-  border-radius: 5px;
+.wave-divider path {
+  fill: #7dc8e3;
 }
 
 .manual-divider {
@@ -407,4 +416,89 @@ mark {
   padding: 0 20px;
   z-index: 1000;
 }
+
+
+#answerPanel {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: rgb(190, 221, 255);
+  border: 1px solid rgb(190, 221, 255);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 9999;
+}
+
+#answerModeBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #1c518d;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.result.top {
+  border: 2px solid rgb(8, 97, 160);
+  background: rgb(172, 221, 255);
+  transform: scale(1.01);
+}
+
+.result {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.group-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.hero-tagline {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.hero-tagline span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1d2a44, #2d3f66);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hero-tagline span:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.box {
+  background: #e9f7ff; 
+  border: 1px solid #405d6e(125, 200, 227, 0.35);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px auto;
+  max-width: 950px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 
