@@ -901,5 +901,148 @@ body::before {
 
   z-index: 1000;
 }
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
 
+@media (max-width: 768px) {
+
+  body {
+    margin: 15px;
+    padding-top: 120px;
+  }
+
+  /* HEADER */
+  .topbar {
+    width: calc(100% - 20px);
+    height: 90px;
+
+    top: 10px;
+
+    padding: 0 12px;
+
+    border-radius: 18px;
+  }
+
+  .logo {
+    height: 70px;
+    padding: 10px;
+  }
+
+  .logo-circle {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* NAV */
+  .nav {
+    gap: 6px;
+  }
+
+  .nav a {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  /* TITLES */
+  .hero-title,
+  .page-title {
+    font-size: 28px;
+    padding: 12px 18px;
+    margin: 40px auto;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .home-container h1 {
+    font-size: 42px;
+  }
+
+  .home-description {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  /* SEARCH */
+  #searchBox {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .response-text {
+    font-size: 18px;
+  }
+
+  /* RESULTS */
+  .result {
+    padding: 14px;
+  }
+
+  .result h2 {
+    font-size: 20px;
+  }
+
+  .result h3 {
+    font-size: 18px;
+  }
+
+  .result p {
+    font-size: 15px;
+  }
+
+  /* HOME BUTTONS */
+  .home-links a {
+    width: 100%;
+    max-width: 350px;
+    font-size: 22px;
+  }
+
+  /* ANSWER PANEL */
+  #answerPanel {
+    left: 10px;
+    right: 10px;
+    bottom: 80px;
+
+    width: auto;
+    max-width: none;
+  }
+
+  /* NOTES SIDEBAR */
+  .notes-sidebar {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* NOTES BUTTON */
+  .notes-toggle {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* ANSWER BUTTON */
+  #answerModeBtn {
+    bottom: 20px;
+    left: 20px;
+    right: auto;
+  }
+
+  /* STATS */
+  .home-page .stats {
+    gap: 15px;
+  }
+
+  .home-page .stat {
+    min-width: 120px;
+  }
+
+  /* CARDS */
+  .home-page .cards {
+    padding: 10px;
+    gap: 15px;
+  }
+
+}
 
